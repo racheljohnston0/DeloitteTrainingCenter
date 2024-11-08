@@ -1,0 +1,53 @@
+﻿@model Deloitte_Training_Center.Models.Training
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create Training</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dateTime" class="control-label"></label>
+                <input asp-for="dateTime" class="form-control" />
+                <span asp-validation-for="dateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prequisite" class="control-label"></label>
+                <input asp-for="prequisite" class="form-control" />
+                <span asp-validation-for="prequisite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="duration" class="control-label"></label>
+                <input asp-for="duration" type="text" required pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2}" 
+                value="00:00:00" title="Write a duration in the format hh:mm:ss:ms" class="form-control"/>                
+                <span asp-validation-for="duration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="credit" class="control-label"></label>
+                <input asp-for="credit" class="form-control" />
+                <span asp-validation-for="credit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

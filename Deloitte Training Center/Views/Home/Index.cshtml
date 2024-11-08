@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Deloitte_Training_Center.Models.Training>
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h3><b>Welcome </b>@HttpContextAccessor.HttpContext.Session.GetString("_Name")</h3>
+    <h1 class="display-4">Deloitte Training Center</h1><br>
+    <br>
+    @Html.Partial("_TrainingDetails", Model)
+</div>

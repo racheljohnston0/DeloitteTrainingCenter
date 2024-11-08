@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Deloitte_Training_Center.Models.Training>
+
+<h3>Ongoing Trainings</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prequisite)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dateTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.prequisite)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

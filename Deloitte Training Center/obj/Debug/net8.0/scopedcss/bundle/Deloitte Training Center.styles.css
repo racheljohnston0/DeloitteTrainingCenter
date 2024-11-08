@@ -1,0 +1,49 @@
+/* _content/Deloitte Training Center/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-idcu9l5ucp] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-idcu9l5ucp] {
+  color: #0077cc;
+}
+
+.btn-primary[b-idcu9l5ucp] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-idcu9l5ucp], .nav-pills .show > .nav-link[b-idcu9l5ucp] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-idcu9l5ucp] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-idcu9l5ucp] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-idcu9l5ucp] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-idcu9l5ucp] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-idcu9l5ucp] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
